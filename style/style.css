@@ -38,7 +38,7 @@ footer {
 }
 
 img {
-    width: 300px; /* 設定固定寬度 */
-    height: 200px; /* 設定固定高度 */
+    max-width: 100%;
+    height: auto; /* 設定固定高度 */
     object-fit: cover; /* 確保圖片不失真 */
 }
