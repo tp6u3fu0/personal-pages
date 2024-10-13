@@ -38,7 +38,13 @@ footer {
 }
 
 img {
-    max-width: 100%;
-    height: auto; /* 設定固定高度 */
-    object-fit: cover; /* 確保圖片不失真 */
+    max-width: 100%; /* 使圖片不超過其容器的寬度 */
+    height: auto; /* 自動調整高度以保持比例 */
+    display: block; /* 使圖片顯示為區塊元素，避免底部有空隙 */
+    margin: 10px 0; /* 增加上下邊距，讓圖片之間有間隔 */
+}
+
+.image-container {
+    max-width: 600px; /* 設定容器的最大寬度 */
+    margin: 0 auto; /* 使容器居中 */
 }
